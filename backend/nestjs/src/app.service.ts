@@ -1,7 +1,5 @@
 import { HttpStatus, Injectable } from '@nestjs/common';
-import { CurrentWeatherModel, ForcastWeatherModel } from './utils/weather-model';
-import { env } from 'process';
-import { ConfigService } from '@nestjs/config';
+import { CurrentWeatherModel, ForcastWeatherModel } from './utils/weather-models';
 
 @Injectable()
 export class AppService {
@@ -44,7 +42,7 @@ export class AppService {
   async getForecastWeather() {
     const cities = ['Gliwice', 'Hamburg'];
     const results = {};
-console.log(process.env.API_KEY)
+
     for (const city of cities) {
       const res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${this.API_KEY}&q=Gliwice&days=7`);
 
