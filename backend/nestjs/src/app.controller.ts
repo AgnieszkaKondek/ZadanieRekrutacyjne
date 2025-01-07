@@ -9,4 +9,14 @@ export class AppController {
   getHello() {
     return this.appService.getHello();
   }
+
+  @Get(`/realtime-weather`)
+  async getRealtimeWeather() {
+    return await this.appService.getRealtimeWeather();
+  }
+
+  @Get(`/forecast-weather`)
+  async getForecastWeather() {
+    return await this.appService.getForecastWeather();
+  }
 }
