@@ -1,3 +1,43 @@
+# Weather Application
+
+This is a NestJS-based application that provides real-time and forecast weather data for specified locations.
+
+---
+
+## Features
+- Fetches real-time weather data for cities.
+- Provides a 7-day weather forecast.
+- Utilizes caching to minimize API requests.
+
+---
+
+## Prerequisites
+Ensure you have the following installed:
+1. **Node.js** (v16 or newer): [Download Node.js](https://nodejs.org/)
+2. **npm**: Comes with Node.js.
+3. **Git** (for cloning the repository): [Download Git](https://git-scm.com/)
+8e7a3e658b8f4897a65103340250701
+---
+
+## Getting Started
+
+Clone the project to your local machine:
+```bash
+git clone https://github.com/AgnieszkaKondek/ZadanieRekrutacyjne
+cd your-repository
+
+Install required dependencies: npm install
+
+Run the Application: npm run start:dev
+
+The application will be accessible at: http://localhost:3000
+
+Endpoints:
+GET /hello: Verifies the application is running.
+GET /realtime-weather: Fetches real-time weather data.
+GET /forecast-weather: Fetches 7-day weather forecast data.
+
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
